@@ -4,65 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
   <div class="page-header">
-    <div class="banner">
-      <nav class="main-nav">
+    <nav class="main-nav">
+      <div class="main-nav__bar">
         <div class="main-nav__logo">
-          <img src="http://placehold.it/75x22" alt="Pink">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
         </div>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><img src="http://placehold.it/75x22" alt="Pink"></li>
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">Html Academy</a></li>
-          </ul>
+        <div class="main-nav__toggle">
+          <button type="button">Открыть меню</button>
         </div>
-      </nav>
-      <div class="banner__wrapper">
-        <img src="http://placehold.it/320x314" alt="Iphone">
       </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></li>
+        <li class="main-nav__item"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="#">Фотографии</a></li>
+        <li class="main-nav__item"><a href="#">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">Html Academy</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <img src="img/iphone-hand-mobile@1x.png" alt="Iphone">
     </div>
   </div>
   <div class="download-app">
-    <button class="download-app__button" type="button">Скачать приложение</button>
-    <ul class="download-app__list">
-      <li class="download-app__item"><img src="http://placehold.it/56x56" alt="IOS"></li>
-      <li class="download-app__item"><img src="http://placehold.it/56x56" alt="Android"></li>
-      <li class="download-app__item"><img src="http://placehold.it/56x56" alt="Windows"></li>
-    </ul>
-    <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <div class="download-app__wrapper">
+      <a class="download-app__button" href="#">Скачать приложение</a>
+      <ul class="download-app__list">
+        <li class="download-app__item"><img src="img/logo-apple.svg" width="47" height="56" alt="IOS"></li>
+        <li class="download-app__item"><img src="img/logo-android.svg" width="43" height="47" alt="Android"></li>
+        <li class="download-app__item"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Windows"></li>
+      </ul>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
   </div>
   <div class="slogan">
     <div class="slogan__wrapper">
-      <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+      <p>Устали от серости мегаполиса?</p>
+      <p>Нам есть, что вам предложить!</p>
     </div>
   </div>
   <div class="features">
-    <ul class="feautures__image-list">
-      <li class="features__image-item"><img src="http://placehold.it/158x278" alt="Phone1"></li>
-      <li class="features__image-item"><img src="http://placehold.it/158x278" alt="Phone2"></li>
-      <li class="features__image-item"><img src="http://placehold.it/158x278" alt="Phone3"></li>
-    </ul>
-    <ul class="features__list">
-      <li class="features__item">
-        <b>Поднимает настроение</b>
-        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </li>
-      <li class="features__item">
-        <b>Меняет мир вокруг</b>
-        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </li>
-      <li class="features__item">
-        <b>Заводит новых друзей</b>
-        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul>
+    <div class="features__wrapper">
+      <ul class="feautures__image-list">
+        <li class="features__image-item"><img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Phone1"></li>
+        <li class="features__image-item"><img src="http://placehold.it/158x278" width="157" height="320" alt="Phone2"></li>
+        <li class="features__image-item"><img src="http://placehold.it/158x278" width="157" height="320" alt="Phone3"></li>
+      </ul>
+      <ul class="features__list">
+        <li class="features__item">
+          <b>Поднимает настроение</b>
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <b>Меняет мир вокруг</b>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <b>Заводит новых друзей</b>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="reviews">
     <div class="reviews__wrapper">
@@ -84,27 +93,54 @@
   </div>
   <div class="prices">
     <div class="prices__wrapper">
-      <ul class="prices__list">
-        <li class="prices__item-header"><b>Стандарт</b><span>3,99 USD</span></li>
-        <li class="prices__item"><span>Розовый фильтр</span></li>
-        <li class="prices__item"><span>Смайлики</span></li>
-        <li class="prices__item"><span>Комментарии</span></li>
-      </ul>
+      <table class="prices__table">
+        <caption>
+          Стандарт<br><span>3,99 USD</span>
+        </caption>
+        <tr>
+          <td>Розовый фильтр</td>
+          <td class="prices__check">✅</td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td class="prices__check">✅</td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td class="prices__check--no">❌</td>
+        </tr>
+      </table>
     </div>
   </div>
   <div class="contacts">
     <div class="contacts__wrapper">
       <p>Остались вопросы?<br>Свяжитесь с нами!</p>
       <ul class="contacts__list">
-        <li class="contacts__item"><b>Звоните:</b><span>+7 (812) 555-66-66</span></li>
-        <li class="contacts__item"><b>Пишите:</b><span>mail@htmlacademy.ru</span></li>
-        <li class="contacts__item"><b>Приезжайте в гости:</b><span>ул. Большая<br>Конюшенная, 19/8</span></li>
+        <li class="contacts__item"><b>Звоните:</b><br><span>+7 (812) 555-66-66</span></li>
+        <li class="contacts__item"><b>Пишите:</b><br><span>mail@htmlacademy.ru</span></li>
+        <li class="contacts__item"><b>Приезжайте в гости:</b><br><span>ул. Большая<br>Конюшенная, 19/8</span></li>
       </ul>
     </div>
     <div class="contacts__map">
-      <img src="http://placehold.it/320x200" alt="Map">
+      <img src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Map">
     </div>
   </div>
+  <script>
+    const button = document.querySelector('.main-nav__toggle button');
+    const menu = document.querySelector('.main-nav__list');
+    const nav = document.querySelector('.main-nav');
+
+    button.addEventListener("click", ()=> {
+      if(menu.style.display == 'none') {
+        menu.style.display = '';
+        nav.style.paddingTop = '325px';
+      }
+      else {
+        menu.style.display = 'none';
+        nav.style.paddingTop = '0';
+      }
+    });
+  </script>
 </body>
 
 </html>

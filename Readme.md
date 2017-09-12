@@ -1,8 +1,5 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Иван Второв](https://up.htmlacademy.ru/adaptive/11/user/170315).
-* Наставник: [Алексей Белов](https://github.com/Badaboom1995)
-
 ---
 
 **Обратите внимание на файлы:**
