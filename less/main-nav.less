@@ -3,15 +3,16 @@
 }
 
 .main-nav__bar {
-  .clearfix();
+  // .clearfix();
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   background-color: #283645;
   border-bottom: 1px solid black;
 }
 
 .main-nav__logo {
-  float: left;
-
+  // float: left;
   img {
     width: 75px;
     height: 22px;
@@ -19,7 +20,7 @@
 }
 
 .main-nav__toggle {
-  float: right;
+  // float: right;
   font-size: 0;
   line-height: 0;
   button {
@@ -80,12 +81,13 @@
 
 .main-nav__item {
   text-align: center;
-  padding: 18px 0;
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
 
   a {
+    display: block;
+    padding: 18px 0;
     text-decoration: none;
     color: #FFFFFF;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 }
