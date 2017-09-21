@@ -6,7 +6,7 @@
 .main-nav__bar {
   .clearfix();
   padding: 20px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__logo {
@@ -19,9 +19,13 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 18px;
+  right: 18px;
   float: right;
   font-size: 0;
   line-height: 0;
+  z-index: 1;
   button {
     padding: 0;
     border: none;
@@ -31,7 +35,37 @@
     outline: none;
     width: 50px;
     height: 24px;
-    background-image: url(../img/icon-menu-burger.svg);
+    background-image: url(../img/icon-menu-cross.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.main-nav--closed {
+  padding-top: 0;
+  .main-nav__bar {
+    display: block;
+  }
+  .main-nav__list {
+    display: none;
+  }
+  .main-nav__toggle {
+    button {
+      background-image: url(../img/icon-menu-burger.svg);
+    }
+  }
+}
+
+.main-nav--nojs {
+  padding-top: 325px;
+  .main-nav__list {
+    display: block;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__bar {
+    display: none;
   }
 }
 
@@ -46,6 +80,7 @@
   font-weight: 700;
   text-transform: uppercase;
   background-color: #283645;
+  z-index: 0;
 
   img {
     width: 75px;
