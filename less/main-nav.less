@@ -1,5 +1,5 @@
 .main-nav {
-  position: relative;
+  position: static;
 }
 
 .main-nav__bar {
@@ -16,6 +16,16 @@
   img {
     width: 75px;
     height: 22px;
+  }
+}
+
+@media @tablet-widths {
+  .main-nav__bar {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 37px;
+    padding-bottom: 44px;
+    align-items: flex-end;
   }
 }
 
@@ -39,6 +49,11 @@
 }
 
 .main-nav--closed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   .main-nav__bar {
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
@@ -54,6 +69,7 @@
 }
 
 .main-nav--nojs {
+  position: static;
   .main-nav__list {
     display: block;
   }
