@@ -13,6 +13,12 @@
 
 .container-fluid() {
   width: auto;
+
+  @media @tablet-widths {
+    width: 88.5%; //620 / 700
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .list-unstyled() {

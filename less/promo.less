@@ -1,32 +1,25 @@
-.promo-header {
-  background: url(../img/iphone-hand-mobile@1x.png) no-repeat center bottom,
-  url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
-  min-height: 456px;
-}
-
 @media @mobile-widths-only {
-  .promo-header__text {
+  .promo__text {
     .visually-hidden();
   }
 }
 
 @media @tablet-widths {
   .promo {
-    position: relative;
-  }
-  .promo-header {
-    background: url(../img/iphone-hand-tablet@1x.png) no-repeat center bottom,
-    url(../img/bg-back-tablet@1x.jpg) no-repeat center top;
+    // position: relative;
     min-height: 729px;
+    background: url(../img/iphone-hand-tablet@1x.png) no-repeat center bottom;
   }
-  .promo-header__text {
-    padding-top: 202px;
-    padding-left: 70px;
+  .promo__text {
+    width: 186px;
+    padding-top: 204px;
+    padding-left: 56px;
+    text-align: center;
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
     color: white;
     text-align: center;
-    width: 240px;
+    margin-bottom: 30px;
   }
 }
