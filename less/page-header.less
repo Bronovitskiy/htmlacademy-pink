@@ -1,9 +1,14 @@
 .page-header {
-  // .container-fluid();
-  background: url(../img/bg-back-tablet@1x.jpg) no-repeat center bottom;
+  // background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
   position: relative;
 }
 
 .page-header__wrapper {
   .container-fluid();
+}
+
+@media @tablet-widths {
+  .page-header {
+    background: url(../img/bg-back-tablet@1x.jpg) no-repeat center bottom;
+  }
 }
