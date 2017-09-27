@@ -1,0 +1,42 @@
+.research {
+  background-color: white;
+}
+
+.research__wrapper {
+  .container-fluid();
+  display: flex;
+  padding-top: 60px;
+}
+
+.research__image {
+  width: 240px;
+  height: 277px;
+  flex-shrink: 0;
+  background: url(../img/timer.svg) no-repeat;
+  background-size: contain;
+}
+
+.research__text {
+  padding-left: 68px;
+  padding-top: 36px;
+  font-size: 14px;
+  line-height: 24px;
+  b {
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+  }
+  p {
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  }
+  a {
+  	color: #d22856;
+  }
+}
+
+@media @mobile-widths-only {
+	.research {
+		display: none;
+	}
+}
