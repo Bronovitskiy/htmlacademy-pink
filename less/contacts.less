@@ -1,5 +1,4 @@
 .contacts {
-  .container-fluid();
   background-color: #FFFFFF;
   text-align: center;
   p {
@@ -41,5 +40,36 @@
 .contacts__map {
   img {
     display: block;
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+    p{
+      font-size: 40px;
+      line-height: 49px;
+      margin-bottom: 40px;
+    }
+  }
+  .contacts__wrapper {
+    .container-fluid();
+    padding-top: 45px;
+  }
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contacts__item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 46px;
+    flex-grow: 1;
+    span {
+      line-height: 34px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
