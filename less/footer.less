@@ -1,0 +1,33 @@
+    .footer {
+    background-color: white;
+  }
+
+  .footer__wrapper {
+    .container-fluid();
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__developed {
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 14px;
+    padding-left: 16px;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 14px;
+      font-size: 0;
+      width: 27px;
+      height: 34px;
+      background: url(../img/logo-htmlacademy.svg) no-repeat;
+    }
+  }
+
+  @media @mobile-widths-only {
+    .footer {
+      display: none;
+    }
+}
